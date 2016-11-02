@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+  <head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <title>
+    
+      Tutorial Post #1 &middot; ML@B
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/blog/public/css/poole.css">
+  <link rel="stylesheet" href="/blog/public/css/syntax.css">
+  <link rel="stylesheet" href="/blog/public/css/lanyon.css">
+  <link rel="stylesheet" href="/blog/public/css/custom.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Serif:400,400italic,700%7CPT+Sans:400">
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+  <!-- Icons -->
+  <link rel="shortcut icon" href="/blog/public/favicon.ico">
+	<link rel="icon" sizes="16x16 32x32 64x64" href="/blog/public/favicon.ico">
+	<link rel="icon" type="image/png" sizes="196x196" href="/blog/public/favicon-192.png">
+	<link rel="icon" type="image/png" sizes="160x160" href="/blog/public/favicon-160.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="/blog/public/favicon-96.png">
+	<link rel="icon" type="image/png" sizes="64x64" href="/blog/public/favicon-64.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/blog/public/favicon-32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/blog/public/favicon-16.png">
+	<link rel="apple-touch-icon" href="/blog/public/favicon-57.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="/blog/public/favicon-114.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="/blog/public/favicon-72.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="/blog/public/favicon-144.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="/blog/public/favicon-60.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="/blog/public/favicon-120.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="/blog/public/favicon-76.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="/blog/public/favicon-152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="/blog/public/favicon-180.png">
+	<meta name="msapplication-TileColor" content="#FFFFFF">
+	<meta name="msapplication-TileImage" content="/blog/public/favicon-144.png">
+	<meta name="msapplication-config" content="/blog/public/browserconfig.xml">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
+
+  <!-- MathJax -->
+  <script type="text/javascript" async
+    src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
+  </script>
+</head>
+
+
+  <body>
+
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-86289376-2', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+    <!-- Target for toggling the sidebar `.sidebar-checkbox` is for regular
+     styles, `#sidebar-checkbox` for behavior. -->
+<input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox">
+
+<!-- Toggleable sidebar -->
+<div class="sidebar" id="sidebar">
+
+  <div style="align:center">
+      <img src="/blog/images/mlabprofile.png"/>
+  </div>
+
+  <div class="sidebar-item" style="text-align:center">
+    <p>The official blog of <a href="http://ml.berkeley.edu">Machine Learning @ Berkeley</a>.</p>
+  </div>
+
+  <nav class="sidebar-nav">
+    <a class="sidebar-nav-item" href="/blog/">Home</a>
+
+    
+
+    
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+          <a class="sidebar-nav-item" href="/blog/about/">About</a>
+        
+      
+    
+      
+        
+          <a class="sidebar-nav-item" href="/blog/archive/">Archive</a>
+        
+      
+    
+      
+        
+          <a class="sidebar-nav-item" href="/blog/events/">Events</a>
+        
+      
+    
+
+    <span class="sidebar-nav-item">Currently v1.0.0</span>
+  </nav>
+
+  <div class="sidebar-item" id="contact-list" style="text-align:center">
+
+    <p>
+      Reach out to us:
+    </p>
+
+    
+    <a href="https://www.facebook.com/berkeleyml">
+      <i class="fa fa-facebook-square fa-lg"></i>
+    </a>
+    
+
+    
+    <a href="https://www.github.com/mlberkeley">
+      <i class="fa fa-github fa-lg"></i>
+    </a>
+    
+
+    
+    <a href="mailto: ml.at.berkeley@gmail.com">
+      <i class="fa fa-envelope fa-lg"></i>
+    </a>
+    
+
+  </div>
+
+</div>
+
+
+    <!-- Wrap is the content to shift when toggling the sidebar. We wrap the
+         content to avoid any CSS collisions with our real content. -->
+    <div class="wrap">
+      <div class="masthead">
+        <div class="container">
+          <h3 class="masthead-title">
+            <a href="http://ml.berkeley.edu//" title="Home">ML@B</a>
+            <small>Blog</small>
+          </h3>
+        </div>
+      </div>
+
+      <div class="container content">
+        <div class="post">
+  <h1 class="post-title">Tutorial Post #1</h1>
+  <span class="post-date">25 Oct 2016</span>
+  <p>Machine learning (ML) has received a lot of hype recently, and not without good reason. It has already revolutionized fields from image recognition to healthcare. Yet to many, the subject seems incredibly complicated.</p>
+
+<!-- break -->
+
+<p>This post, the first in a series of ML tutorials, aims to make machine learning accessible to anyone willing to learn. We’ve designed it to give you a solid understanding of how ML algorithms work as well as provide you the tools to harness it in your projects.</p>
+
+<h3 id="what-is-machine-learning">What is Machine Learning?</h3>
+
+<p>At it’s core, machine learning is not a difficult concept to grasp. In fact, the vast majority of machine learning algorithms are concerned with just one simple task: drawing lines. In particular, machine learning is all about drawing lines through data. What does that mean? Let’s look at an example:</p>
+
+<h3 id="classification">Classification</h3>
+
+<p>Let’s say you’re a computer with a collection of apple and orange images. From each image, you can infer the color and size of a fruit, and for some reason you want to classify the fruit as either an apple or an orange. The first step in many machine learning algorithms is to obtain labeled training data. This means getting information about the properties of the fruit - such as the size and color of the fruit -  and a label - whether the fruit is an apple or an orange. For example, our labeled training data might look like this:</p>
+
+<center>
+	<img src="/blog/assets/classification_no_line.png" width="500" />
+</center>
+
+<p>The red x’s are labeled  apples and the orange x’s are labeled oranges. As you’ll probably notice, apples seems to congregate on the left side of the graph, and oranges the right. This is because for the most part, apples are red and oranges are orange.</p>
+
+<p>Now we get to draw lines! For this particular machine learning problem, our goal is to draw a line between the two labeled groups, called a decision boundary. The simplest decision boundary for our data might look something like this:</p>
+
+<center>
+	<img src="/blog/assets/classification_straight.png" width="500" />
+</center>
+
+<p>Just a straight line between the two groups. However, much more complicated machine learning algorithms may end up drawing much more complicated decision boundaries such as this:</p>
+
+<center>
+	<img src="/blog/assets/classification_wavy.png" width="500" />
+</center>
+
+<p>So we’ve drawn a line that separates apples and oranges in the training data. Our assumption now is that the same line we’ve drawn will be able to distinguish an apple from an orange for any kind of apple/orange image we give it. So if we were given an image of a fruit, represented by the blue X below, we could classify it based on the decision boundary we drew:</p>
+
+<center>
+	<img src="/blog/assets/classification_testing.png" width="500" />
+</center>
+
+<p>Now this is the power of machine learning. We take some training data (labeled apple and orange images), run a machine learning algorithm which draws a decision boundary on the data, and then extrapolate what we’ve learned to completely new pieces of data.</p>
+
+<p>Of course, distinguishing between apples and oranges is quite a mundane task. However, we can apply this strategy to much more exciting problems, such as classifying tumors as malignant or benign, marking emails as spam or not spam, and analyzing fingerprints for a fingerprint scanner.</p>
+
+<h3 id="regression">Regression</h3>
+
+<p>What we just saw was one particular field of machine learning, called classification, which draws lines to separate data. We can also use draw lines that describe data to predict things, called regression.</p>
+
+<p>Say we have some data. In particular, let’s say we have the price of various houses versus their square footage. If we visualize the information as a graph, it looks something like this:</p>
+
+<center>
+	<img src="/blog/assets/house_price_data.png" width="500" />
+</center>
+
+<p>Each of the X’s represents a different house with some price and some square footage. Notice that although there is variation in the data, there is also evidently a pattern there: as houses get bigger, they also become more expensive. So if someone were to give you a square footage, you could probably guess how much the house is worth. For example, given the size of a house, you could make a rough guess at what its price would be.</p>
+
+<center>
+	<img src="/blog/assets/house_price_predictor.png" width="500" />
+</center>
+
+<p>Now we can generalize and ask, for any given square footage, how much will a house be worth? Of course, it would be very hard to get an exact answer. However, an approximate answer is much easier to get. And this is where we start drawing lines! Our goal is to draw a line, called a predictor, through the data so it’s as close as possible to each data point so that it predicts the price of a house from it’s square footage.</p>
+
+<center>
+	<img src="/blog/assets/human_predictor_in_action.png" width="500" />
+</center>
+
+<p>In a sense, we can say that the predictor represents a bunch of “typical” houses. What we just did (drawing lines through a dataset), is called regression and is at the heart of machine learning. The only thing that changes between different machine learning techniques, is the way we draw the lines! As a great man once said: “machine learning is just glorified regression!”</p>
+
+<center><div id="container"><canvas id="canvas1" style="border: 1px solid black;" width="300" height="300"></canvas></div></center>
+
+<center><p id="cost">Cost: 100</p></center>
+
+<h2 id="stuff-for-blogging">Stuff for blogging</h2>
+
+<p>Use #,##,…,###### like html’s &lt;h1&gt;,&lt;h2&gt;,… tags</p>
+
+<blockquote>
+  <p>Comments/Quotes(?) sections</p>
+</blockquote>
+
+<p>For <strong>bold</strong>, <em>italic</em>, and <em><strong>both</strong></em>, or <del>strikethrough</del></p>
+
+<ol>
+  <li>some</li>
+  <li>ordered
+    <ul>
+      <li>and</li>
+      <li>sub</li>
+    </ul>
+  </li>
+  <li>lists</li>
+</ol>
+
+<p><a href="http://ml.berkeley.edu">Links</a></p>
+
+<h2 id="code-snippets">Code snippets:</h2>
+
+<p>Ruby:</p>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="k">def</span> <span class="nf">print_hi</span><span class="p">(</span><span class="nb">name</span><span class="p">)</span>
+  <span class="nb">puts</span> <span class="s2">"Hi, </span><span class="si">#{</span><span class="nb">name</span><span class="si">}</span><span class="s2">"</span>
+<span class="k">end</span>
+<span class="n">print_hi</span><span class="p">(</span><span class="s1">'David'</span><span class="p">)</span>
+<span class="c1">#=&gt; prints 'Hi, David' to STDOUT.</span></code></pre></figure>
+
+<p>Python:</p>
+
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="k">class</span> <span class="nc">cs61a</span><span class="p">:</span>
+  <span class="n">is_silly</span> <span class="o">=</span> <span class="bp">True</span>
+
+  <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">is_silly</span> <span class="o">=</span> <span class="bp">False</span>
+
+<span class="n">cs61a</span><span class="o">.</span><span class="n">is_silly</span>
+<span class="o">&gt;&gt;</span><span class="bp">True</span>
+
+<span class="n">class</span><span class="o">.</span><span class="n">is_silly</span>
+<span class="o">&gt;&gt;&gt;</span><span class="bp">False</span></code></pre></figure>
+
+<p>js:</p>
+
+<figure class="highlight"><pre><code class="language-js" data-lang="js"><span class="kd">var</span> <span class="nx">adder</span> <span class="o">=</span> <span class="k">new</span> <span class="nb">Function</span><span class="p">(</span><span class="s2">"a"</span><span class="p">,</span> <span class="s2">"b"</span><span class="p">,</span> <span class="s2">"return a + b"</span><span class="p">);</span>
+
+<span class="nx">adder</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">6</span><span class="p">);</span>
+<span class="c1">// &gt; 8</span></code></pre></figure>
+
+<h2 id="math">Math</h2>
+
+<p>You can use TeX and LaTeX notation, MathML notation, AsciiMath notation, or a combination of all three within the same page.</p>
+
+<h3 id="in-line-mathematics">In-line mathematics</h3>
+
+<p>in line <script type="math/tex">ax^2 + bx + c = 0</script> math</p>
+
+<h3 id="displayed-mathematics">Displayed mathematics</h3>
+
+<script type="math/tex; mode=display">\sum_{n=1}^\infty 1/n^2 = \frac{\pi^2}{6}</script>
+
+<h3 id="sample-tex-from-my-ee16a-hw8tex">Sample TeX From my ee16a hw8.tex:</h3>
+
+<script type="math/tex; mode=display">\begin{equation*}
+  h_{H_2O} = \frac{C_{known}(\frac{V_{in}}{V_o} - 1 \pm \sqrt{1 - 2\frac{V_o}{V_{in}}}) - \epsilon h_{tot}}{80\epsilon}
+\end{equation*}</script>
+
+</div>
+
+<div class="related">
+  <h2>Related Posts</h2>
+  <ul class="related-posts">
+    
+      <li>
+        <h3>
+          <a href="/blog/2016/10/14/demo-day/">
+            Demo Day: September 2016
+            <small>14 Oct 2016</small>
+          </a>
+        </h3>
+      </li>
+    
+      <li>
+        <h3>
+          <a href="/blog/2016/10/04/hello-world/">
+            Hello World!
+            <small>04 Oct 2016</small>
+          </a>
+        </h3>
+      </li>
+    
+  </ul>
+</div>
+
+<pre><script src="/blog/assets/shapes.js"></script>
+<script> init(); </script>
+
+        
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+    //shortname//
+    var disqus_shortname = 'https-mlberkeley-github-io-blog';
+    var disqus_identifier = "/2016/10/25/placeholder/";
+
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+
+
+      </div>
+    </div>
+
+    <label for="sidebar-checkbox" class="sidebar-toggle"></label>
+
+    <script>
+      (function(document) {
+        var toggle = document.querySelector('.sidebar-toggle');
+        var sidebar = document.querySelector('#sidebar');
+        var checkbox = document.querySelector('#sidebar-checkbox');
+
+        document.addEventListener('click', function(e) {
+          var target = e.target;
+
+          if(!checkbox.checked ||
+             sidebar.contains(target) ||
+             (target === checkbox || target === toggle)) return;
+
+          checkbox.checked = false;
+        }, false);
+      })(document);
+    </script>
+
+  </body>
+</html>
